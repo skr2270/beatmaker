@@ -82,3 +82,12 @@ select {
     cursor: pointer;
     margin-top: 2rem;
 }
+
+@keyframes playTrack {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.2);
+    }
+}
