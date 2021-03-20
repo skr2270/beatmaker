@@ -33,15 +33,15 @@ i, svg {
 }
 
 .kick-pad.active {
-  background: #9b3cf3;
+  background: #470288;
 }
 
 .snare-pad.active {
-  background: #02c0fa;
+  background: #015e7a;
 }
 
 .hihat-pad.active {
-  background: #f5a208;
+  background: #976302;
 }
 
 .sequencer {
