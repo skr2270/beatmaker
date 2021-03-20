@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+i, svg {
+  pointer-events: none;
+}
+
+.kick-pad, .snare-pad, .hihat-pad {
+  width: 5rem;
+  height: 5rem;
+  margin: 1rem 0.5rem;
+  cursor: pointer;
+}
+
+.kick-pad {
+  background: #b682e7;
+}
+
+.snare-pad {
+  background: #47caf1;
+}
+
+.hihat-pad {
+  background: #fcbe4c;
+}
+
+.kick-pad.active {
+  background: #9b3cf3;
+}
+
+.snare-pad.active {
+  background: #02c0fa;
+}
+
+.hihat-pad.active {
+  background: #f5a208;
+}
+
+.sequencer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 100vh;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.hihat-track, .snare-track, .kick-track {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 90%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 3rem;
+}
+
+.hihat-track .hihat, .hihat-track .snare, .hihat-track .kick, .snare-track .hihat, .snare-track .snare, .snare-track .kick, .kick-track .hihat, .kick-track .snare, .kick-track .kick {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.hihat-track .hihat .pad, .hihat-track .snare .pad, .hihat-track .kick .pad, .snare-track .hihat .pad, .snare-track .snare .pad, .snare-track .kick .pad, .kick-track .hihat .pad, .kick-track .snare .pad, .kick-track .kick .pad {
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.hihat-track .controls, .snare-track .controls, .kick-track .controls {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin: 0rem 1rem;
+}
+
+.hihat-track .controls button, .snare-track .controls button, .kick-track .controls button {
+  padding: 1rem;
+  border: none;
+  background: gray;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+select {
+  padding: 1rem;
+  font-size: 1rem;
+}
+
+.play {
+  padding: 1rem 2rem;
+  font-size: 1.5rem;
+  border: none;
+  background: gray;
+  color: white;
+  cursor: pointer;
+  margin-top: 2rem;
+}
+/*# sourceMappingURL=style.css.map */
