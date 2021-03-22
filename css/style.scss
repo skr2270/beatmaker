@@ -82,6 +82,28 @@ select {
     cursor: pointer;
     margin-top: 2rem;
 }
+.mute.active{
+    background: rgb(192, 190, 190);
+}
+.tempo{
+    margin-top: 1rem;
+    width: 30%;
+    .tempo-slider{
+        padding: 0.1rem;
+        -webkit-appearance: none;
+        margin: 1rem 0rem;
+        border-radius: 1rem;
+        width: 100%;
+        position: relative;
+        background: rgb(88, 88, 88);
+        cursor: pointer;
+    }
+    p {
+    text-align: center;
+    margin-top: -0.8rem;
+    }
+}
+
 
 @keyframes playTrack {
     from {
